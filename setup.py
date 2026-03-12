@@ -61,11 +61,15 @@ def hipify_wrapper() -> None:
 
 
 def cuda_extension() -> tuple[list, dict]:
-    # Third Party
-    from torch.utils import cpp_extension  # Import here
-
-    print("Building CUDA extensions")
     global ENABLE_CXX11_ABI
+    # Skip CUDA build on macOS (no NVIDIA CUDA)
+    if sys.platform == "darwin":
+        print("Skipping CUDA extensions on macOS")
+        return [], {}
+
+    from torch.utils import cpp_extension  # Import here
+    print("Building CUDA extensions")
+
     if ENABLE_CXX11_ABI:
         flag_cxx_abi = "-D_GLIBCXX_USE_CXX11_ABI=1"
     else:
