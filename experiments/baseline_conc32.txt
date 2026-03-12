@@ -1,0 +1,2 @@
+local_disk: ops=256 concurrency=32 elapsed=0.035s ops/sec=7364.88
+rust_raw_block: ops=256 concurrency=32 elapsed=0.002s ops/sec=147674.53

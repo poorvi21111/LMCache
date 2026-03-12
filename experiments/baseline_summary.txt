@@ -1,0 +1,10 @@
+local_disk: ops=256 concurrency=32 elapsed=0.035s ops/sec=7364.88
+rust_raw_block: ops=256 concurrency=32 elapsed=0.002s ops/sec=147674.53
+local_disk: ops=256 concurrency=4 elapsed=0.032s ops/sec=7915.05
+rust_raw_block: ops=256 concurrency=4 elapsed=0.000s ops/sec=670304.46
+local_disk: ops=256 concurrency=16 elapsed=0.040s ops/sec=6338.35
+rust_raw_block: ops=256 concurrency=16 elapsed=0.001s ops/sec=233372.65
+local_disk: ops=256 concurrency=16 elapsed=0.031s ops/sec=8291.32
+rust_raw_block: ops=256 concurrency=16 elapsed=0.001s ops/sec=239438.74
+local_disk: ops=256 concurrency=16 elapsed=0.033s ops/sec=7648.88
+rust_raw_block: ops=256 concurrency=16 elapsed=0.001s ops/sec=242481.65
